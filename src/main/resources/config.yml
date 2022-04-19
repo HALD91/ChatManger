@@ -1,0 +1,44 @@
+###########################
+#####                 #####
+####                   ####
+###   Author: HALD91    ###
+###   Version: 1.2.4.7  ###
+####                   ####
+#####                 #####
+###########################
+Prefix: '&7[&cChat&3Manager&7]'
+
+ChatManager:
+  Help:
+    ReloadConfig: '&a&lThe Config has been reloaded'
+    PermsMessage: '&cYou do not have permission to execute this command!'
+    message: '&7&l--------------------------------- &cChat &3Manager&7 ------------------------------------'
+    message1: '&7Use /ChatManager help &b- To get help on how to use the commands in this plugin.'      # This Line is also used when the commands in this plugin is used wrong
+    message2: 's'
+    message3: 'd'
+    message4: 'g'
+    message5: 'h'
+    message6: 'as'
+    message7: '23'
+    message8: 'asd'
+    message9: 'dfhj'
+    message10: 'asrtj'
+    message11: '&7&l-----------------------------------------------------------------------------'
+
+
+
+  Mute:
+    PermsMessage: '&cYou do not have permission to execute this command!'
+    MutedMessage: '&7Your not able to chat right now because you have been muted.'
+    Who'sBeenMuted1: '&7The User'
+    Who'sBeenMuted2: 'has been muted.'
+    Alreadymuted: 'has already been muted.'
+    NotOnline: 'Please enter a username of which is currently online'
+
+  UnMute:
+    PermsMessage: '&cYou do not have permission to execute this command!'
+    UnMutedMessage: '&7Your now able to chat because you have been unmuted.'
+    Who'sBeenUnMuted1: '&7The User'
+    Who'sBeenUnMuted2: 'has been unmuted.'
+    Notmuted: 'is not muted'
+    NotOnline: 'Please enter a username of which is currently online'

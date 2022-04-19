@@ -1,0 +1,15 @@
+name: ChatControl
+main: me.HALD91.Chat.ChatCore
+author: HALD91
+version: 1.2.4.7
+api-version: 1.13
+
+commands:
+  chat:
+    permission: chat.command.use
+  mute:
+    permission: mute.command.use
+  unmute:
+    permission: unmute.command.use
+  chatmanager:
+    permission: chatmanager.admin.use
