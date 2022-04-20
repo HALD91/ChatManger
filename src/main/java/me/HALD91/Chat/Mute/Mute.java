@@ -32,8 +32,6 @@ public class Mute implements CommandExecutor, Listener {
     String ChatManagerHelpMessage7 = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("ChatManager.Help.message7") + "");
     String ChatManagerHelpMessage8 = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("ChatManager.Help.message8") + "");
     String ChatManagerHelpMessage9 = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("ChatManager.Help.message9") + "");
-    String ChatManagerHelpMessage10 = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("ChatManager.Help.message10") + "");
-    String ChatManagerHelpMessage11 = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("ChatManager.Help.message11") + "");
     //Muted
     String ChatManagerPermsMessage = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("ChatManager.Mute.PermsMessage") + "");
     String ChatManagerMutedMessage = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("ChatManager.Mute.MutedMessage") + "");
@@ -77,12 +75,13 @@ public class Mute implements CommandExecutor, Listener {
                         sender.sendMessage(ChatManagerHelpMessage7);
                         sender.sendMessage(ChatManagerHelpMessage8);
                         sender.sendMessage(ChatManagerHelpMessage9);
-                        sender.sendMessage(ChatManagerHelpMessage10);
-                        sender.sendMessage(ChatManagerHelpMessage11);
                     }
-                    if (args[0].equalsIgnoreCase("reload")) {
-                        main.reloadConfig();
-                        sender.sendMessage(prefix + " " + ChatManagerHelpReload);
+                    if (args[0].equalsIgnoreCase("perms")) {
+                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7chatmanager.admin.use &b- To use the ChatManager command."));
+                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7mute.command.use &b- To use the Mute command."));
+                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7unmute.command.use &b- To use the Unmute command."));
+                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7chat.command.use &b- To use the Chat command.")); // Chat.on
+                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Chat.on &b- Use this permission to give a player access to talk when the chat is turned off."));
                     }
                 } else {
                     sender.sendMessage(prefix + " " + ChatManagerHelpMessage1);

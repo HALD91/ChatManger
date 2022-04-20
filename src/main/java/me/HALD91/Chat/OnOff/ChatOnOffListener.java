@@ -1,13 +1,15 @@
 package me.HALD91.Chat.OnOff;
 
+import me.HALD91.Chat.ChatCore;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerChatEvent;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class ChatOnOffListener implements Listener {
-    String prefix = "" + ChatColor.GRAY + "[" + ChatColor.GOLD + "Chat" + ChatColor.DARK_AQUA + "Control" + ChatColor.GRAY + "]" + ChatColor.RESET + " ";
-
+    ChatCore main = JavaPlugin.getPlugin(ChatCore.class);
+    String prefix = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("Prefix"));
     @EventHandler
     public void onchat(PlayerChatEvent e) {
         if (ChatOnOff.chat != true) {
@@ -16,7 +18,7 @@ public class ChatOnOffListener implements Listener {
 
             } else {
                 e.setCancelled(true);
-                e.getPlayer().sendMessage(prefix + ChatColor.GRAY + "Chat is turned " + ChatColor.RED + "off " + ChatColor.GRAY + "you can't type right now");
+                e.getPlayer().sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', "&7Chat is turned &coff &7you can't type right now"));
             }
         }
     }

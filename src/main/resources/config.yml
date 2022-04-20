@@ -13,17 +13,15 @@ ChatManager:
     ReloadConfig: '&a&lThe Config has been reloaded'
     PermsMessage: '&cYou do not have permission to execute this command!'
     message: '&7&l--------------------------------- &cChat &3Manager&7 ------------------------------------'
-    message1: '&7Use /ChatManager help &b- To get help on how to use the commands in this plugin.'      # This Line is also used when the commands in this plugin is used wrong
-    message2: 's'
-    message3: 'd'
-    message4: 'g'
-    message5: 'h'
-    message6: 'as'
-    message7: '23'
-    message8: 'asd'
-    message9: 'dfhj'
-    message10: 'asrtj'
-    message11: '&7&l-----------------------------------------------------------------------------'
+    message1: ''
+    message2: '&7Use /ChatManager help &b- To get help on how to use the commands in this plugin.'      # This Line is also used when the commands in this plugin is used wrong.
+    message3: '&7Use /ChatManager Perms &b- To get alle the Permissions that are being used in this plugin.'
+    message4: '&7Use /Chat on &b- To turn on the chat.'
+    message5: '&7Use /Chat off &b- To turn off the chat.'
+    message6: '&7Use /Mute <Player> &b- To mute a player.'
+    message7: '&7Use /Unmute <Player> &b- To unmute a player.'
+    message8: ''
+    message9: '&7&l-----------------------------------------------------------------------------'
 
 
 
